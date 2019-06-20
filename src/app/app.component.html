@@ -1,0 +1,48 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+
+<div>
+  <app-comp1>
+  </app-comp1>
+</div>
+
+
+<div>
+  <app-comp2 [name]="app_component_attr_02">
+  </app-comp2>
+</div>
+
+<div>
+  <app-comp3 [name]="app_component_attr_03" (emitter)="onEventEmit($event)">
+  </app-comp3>
+</div>
+
+<div>
+  <app-comp4 [name]="app_component_attr_04" (emitter)="onEventEmitWithArgs($event)">
+  </app-comp4>
+</div>
+
+<div>
+  <span>
+    {{app_component_attr_05 | replace: 'component'}}
+  </span>
+</div>
+
+
+<p>
+  <button (click)="showLastArg()">Show Last Argument</button>
+</p>
+
+<div>
+  <app-comp5>
+  </app-comp5>
+</div>
+
+<div>
+  <app-comp6>
+  </app-comp6>
+</div>
