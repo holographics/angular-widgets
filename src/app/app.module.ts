@@ -24,7 +24,6 @@ import { Comp6Component } from './comp6/comp6.component';
     Comp4Component,
     Comp5Component,
     Comp6Component,
-    
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Service2Service } from './service2.service';
-const uuidv1 = require('uuid/v1');
+import { UUID } from 'angular2-uuid';
 
 @Injectable({
   providedIn: 'root'
 })
 export class Service1Service {
-  uuid = uuidv1();
+  uuid = UUID.UUID();
   local_data: string = 'local_data unassigned.';
   constructor(private service_2: Service2Service) {}
 
